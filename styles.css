@@ -19,6 +19,17 @@ body {
   line-height: 1.5;
 }
 
+/* Linki ogólne */
+
+a {
+  color: #003B73;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Kontener */
 
 .container {
@@ -33,7 +44,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(10, 15, 22, 0.95); /* lekko granatowy, elegancki */
   backdrop-filter: blur(10px);
   color: #E5E7EB;
   display: flex;
@@ -175,7 +186,7 @@ p {
   position: absolute;
   left: -1.2rem;
   top: 0;
-  color: #2563EB;
+  color: #003B73; /* nowy primary */
 }
 
 /* ====== BUTTONY ====== */
@@ -185,20 +196,21 @@ p {
   display: inline-block;
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
-  background-color: #2563EB;      /* niebieski */
+  background-color: #003B73;      /* primary DACH blue */
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
   border: none;
   cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.1s ease;
+  transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .btn:hover,
 .btn-primary:hover {
-  background-color: #1D4ED8;
+  background-color: #01497C;      /* darker hover */
   transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 59, 115, 0.35);
 }
 
 .btn--small {
@@ -234,8 +246,8 @@ p {
 .form select:focus,
 .form textarea:focus {
   outline: none;
-  border-color: #2563EB;
-  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+  border-color: #003B73;
+  box-shadow: 0 0 0 1px rgba(0, 59, 115, 0.25);
 }
 
 .form textarea {
@@ -262,8 +274,8 @@ p {
   margin-top: 1rem;
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
-  background-color: #DBEAFE;
-  color: #1D4ED8;
+  background-color: #F3E9D2;   /* jasne złoto / beż */
+  color: #8A6A24;              /* złoty akcent */
   font-size: 0.8rem;
   font-weight: 600;
 }
