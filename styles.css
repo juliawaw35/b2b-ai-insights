@@ -354,3 +354,6 @@ p {
     flex-direction: column;
   }
 }
+#menu.open {
+  display: flex !important;
+}
