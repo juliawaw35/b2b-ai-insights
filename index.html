@@ -14,6 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/og.png" />
 </head>
+
 <body>
   <header class="nav">
     <a class="logo" href="#top">
@@ -26,18 +27,27 @@
       <a href="#plans">Subscription</a>
       <a href="#contact" class="btn btn--small">Contact</a>
     </nav>
-    <button class="burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false">☰</button>
+    <button class="burger">☰</button>
   </header>
 
   <main id="top">
+
+    <!-- HERO -->
     <section class="hero" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); color: white; padding: 100px 0; text-align: center;">
       <div class="container">
-        <h1 style="font-size: 48px; font-weight: 800;">Empower Your Company with <span style="color: #007bff;">AI Automation</span></h1>
-        <p style="font-size: 20px; margin-top: 20px; color: #ccc;">We help CEOs, HR and Managers in DACH eliminate IT costs and automate business with no-code AI systems.</p>
-        <a href="#webinar" style="display: inline-block; margin-top: 30px; background: #007bff; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600;">Join Free AI Webinar</a>
+        <h1 style="font-size: 48px; font-weight: 800;">
+          Empower Your Company with <span style="color: #007bff;">AI Automation</span>
+        </h1>
+        <p style="font-size: 20px; margin-top: 20px; color: #ccc;">
+          We help CEOs, HR and Managers in DACH eliminate IT costs and automate business with no-code AI systems.
+        </p>
+        <a href="#webinar" style="display: inline-block; margin-top: 30px; background: #007bff; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+          Join Free AI Webinar
+        </a>
       </div>
     </section>
 
+    <!-- WEBINAR -->
     <section id="webinar" class="section alt">
       <div class="container">
         <div class="section__head">
@@ -46,6 +56,8 @@
         </div>
 
         <div class="grid grid--2">
+
+          <!-- WHAT YOU'LL LEARN -->
           <article class="card">
             <h3>What you’ll learn in 45 minutes</h3>
             <ul class="bullets">
@@ -59,206 +71,160 @@
             <div class="mini-note">Recording available for registrants. English language. DACH examples.</div>
           </article>
 
-          <form class="form card" id="webinar-form" action="https://formspree.io/f/your-id" method="POST" novalidate>
+          <!-- WEBINAR FORM -->
+          <form class="form card" id="webinar-form" action="https://formspree.io/f/movpypbg" method="POST" novalidate>
             <h3>Reserve your seat (free)</h3>
             <div class="row">
               <input name="first_name" placeholder="First name" required>
               <input name="last_name" placeholder="Last name" required>
             </div>
             <input name="email" type="email" placeholder="Work email" required>
-            <input name="phone" type="tel" placeholder="Phone (with country code)" pattern="^[+0-9 ()-]{6,}$" required>
+            <input name="phone" type="tel" placeholder="Phone (with country code)" required>
             <input name="company" placeholder="Company" required>
+
             <div class="row">
               <select name="role" required>
-                <option value="" disabled selected>Role</option>
+                <option disabled selected>Role</option>
                 <option>CEO / Founder</option>
                 <option>HR / People</option>
                 <option>Operations</option>
                 <option>Sales / Marketing</option>
-                <option>Other Manager</option>
+                <option>Other</option>
               </select>
               <select name="employees" required>
-                <option value="" disabled selected>Employees</option>
+                <option disabled selected>Employees</option>
                 <option>5–10</option>
                 <option>11–20</option>
                 <option>21–30</option>
               </select>
             </div>
-            <div class="row">
-              <select name="country" required>
-                <option value="" disabled selected>Country</option>
-                <option>Switzerland</option>
-                <option>Germany</option>
-                <option>Austria</option>
-                <option>Other (DACH)</option>
-              </select>
-              <input name="referrer" placeholder="How did you hear about us?">
-            </div>
+
             <label class="checkbox">
               <input type="checkbox" name="consent" required>
-              <span>I agree to receive webinar details and follow-up materials according to the <a href="#privacy">Privacy Policy</a>.</span>
+              <span>I agree to receive webinar details according to the Privacy Policy.</span>
             </label>
-            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
-            <input type="hidden" name="utm_source">
-            <input type="hidden" name="utm_medium">
-            <input type="hidden" name="utm_campaign">
-            <button class="btn" type="submit">Join the webinar</button>
-            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+            <button class="btn">Join the webinar</button>
           </form>
+
         </div>
       </div>
     </section>
 
+    <!-- BENEFITS -->
     <section id="benefits" class="section">
       <div class="container">
         <h2>Executive outcomes (not just tools)</h2>
         <div class="grid">
-          <article class="benefit card">
-            <h3>Lower costs, faster ops</h3>
-            <p>Automate busywork across HR, Ops and Sales. Free up 5–10 hours per employee weekly.</p>
-          </article>
-          <article class="benefit card">
-            <h3>Small team, big leverage</h3>
-            <p>No-code + GPT agents give you IT-level efficiency without building a large internal IT department.</p>
-          </article>
-          <article class="benefit card">
-            <h3>Governance & safety</h3>
-            <p>Permissioning, data boundaries and audit trails so AI is safe, compliant and measurable.</p>
-          </article>
+          <article class="card"><h3>Lower costs, faster ops</h3><p>Automate busywork across HR, Ops and Sales. Free up 5–10 hours per employee weekly.</p></article>
+          <article class="card"><h3>Small team, big leverage</h3><p>No-code + GPT agents give you IT-level efficiency without building an internal IT team.</p></article>
+          <article class="card"><h3>Governance & safety</h3><p>Permissioning, data boundaries, audit trails — safe and compliant.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- NOWA SEK CJA ABOUT -->
+    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
         <h2>About B2B AI Insights</h2>
-        <p>
-          B2B AI Insights is a boutique advisory focused on executive AI automation for small B2B companies
-          (5–30 employees) in the DACH region.
-        </p>
-        <p>
-          Instead of selling yet another tool, we help your leadership team:
-        </p>
+        <p>B2B AI Insights is a boutique advisory focused on executive AI automation for small B2B companies (5–30 employees) in the DACH region.</p>
+        <p>We help leadership teams:</p>
         <ul class="bullets">
-          <li>choose a simple, safe AI stack that works with your existing systems,</li>
-          <li>redesign a few critical workflows (sales, HR, operations) for automation,</li>
-          <li>set clear KPIs and governance so AI becomes measurable and compliant.</li>
+          <li>choose a simple, safe AI stack,</li>
+          <li>automate sales, HR and operations workflows,</li>
+          <li>implement KPIs and governance so AI is measurable.</li>
         </ul>
-        <p>
-          All sessions are run in English with examples and practice tailored to German-speaking markets.
-        </p>
+        <p>All sessions are delivered in English with examples tailored to German-speaking markets.</p>
       </div>
     </section>
 
+    <!-- MENTORING -->
     <section id="offer" class="section alt">
       <div class="container">
         <h2>High-ticket 1:1 Mentoring for Companies</h2>
         <div class="grid grid--2">
+
           <article class="card">
             <h3>90-day AI Implementation Program</h3>
             <ul class="bullets">
               <li>Assessment → roadmap → pilot automations</li>
               <li>Sales, HR, Ops playbooks + ready-to-use templates</li>
               <li>Security review, access controls, KPI dashboards</li>
-              <li>Team training & enablement (English, DACH focus)</li>
+              <li>Team training & enablement</li>
             </ul>
             <div class="pill">Typical result: 20–40% faster processes</div>
           </article>
-          <article class="plan card">
-            <h3>Investment &amp; next steps</h3>
-            <p>
-              We scope each project individually based on your team size, processes and risk profile.
-              You receive a fixed project fee (no hourly billing) after a short discovery call and a draft roadmap.
-            </p>
+
+          <article class="card">
+            <h3>Investment & next steps</h3>
+            <p>We scope each project individually based on team size, workflows and risk profile. You receive a fixed project fee after a short discovery call.</p>
             <p class="muted">Company-wide mentoring 1:1. Limited slots per quarter.</p>
             <a class="btn" href="#contact">Book a discovery call</a>
             <p class="tiny">Invoices with VAT available. NDA on request.</p>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- SUBSCRIPTION -->
     <section id="plans" class="section">
       <div class="container">
         <h2>Ongoing subscription (optional)</h2>
         <div class="grid grid--3">
-          <article class="plan card">
-            <h3>Starter</h3>
-            <p class="price">€100 / month</p>
-            <ul class="list">
-              <li>5–10 employees</li>
-              <li>Template updates</li>
-              <li>Quarterly office hours</li>
-            </ul>
-          </article>
-          <article class="plan card">
-            <h3>Growth</h3>
-            <p class="price">€200 / month</p>
-            <ul class="list">
-              <li>11–20 employees</li>
-              <li>Priority Q&A</li>
-              <li>Automation checks</li>
-            </ul>
-          </article>
-          <article class="plan card">
-            <h3>Scale</h3>
-            <p class="price">€300 / month</p>
-            <ul class="list">
-              <li>21–30 employees</li>
-              <li>Playbook refresh</li>
-              <li>Security reviews</li>
-            </ul>
-          </article>
+          <article class="plan card"><h3>Starter</h3><p class="price">€100 / month</p><ul><li>5–10 employees</li><li>Template updates</li><li>Quarterly office hours</li></ul></article>
+          <article class="plan card"><h3>Growth</h3><p class="price">€200 / month</p><ul><li>11–20 employees</li><li>Priority Q&A</li><li>Automation checks</li></ul></article>
+          <article class="plan card"><h3>Scale</h3><p class="price">€300 / month</p><ul><li>21–30 employees</li><li>Playbook refresh</li><li>Security reviews</li></ul></article>
         </div>
         <p class="note">Cancel anytime. Prices excl. VAT.</p>
       </div>
     </section>
 
-    <!-- NOWA WERSJA TRUSTED BY -->
-    <section class="section alt" id="trusted">
+    <!-- TRUSTED -->
+    <section id="trusted" class="section alt">
       <div class="container">
         <h2>Trusted by teams focused on outcomes</h2>
-        <p>
-          We work with small B2B teams (5–30 employees) in the DACH region who care about speed,
-          compliance and clear KPIs — not just “playing” with AI tools.
-        </p>
+        <p>We work with small B2B teams (5–30 employees) in DACH that value speed, compliance and measurable KPIs.</p>
 
-        <h3>Example outcomes from recent projects</h3>
+        <h3>Example outcomes</h3>
         <ul class="bullets">
-          <li>Onboarding and internal training processes reduced from days to hours</li>
-          <li>Manual back-office work (HR / operations / sales support) cut by 20–40%</li>
-          <li>Faster response times for new enquiries without hiring extra staff</li>
-          <li>Clearer governance: which AI tools can be used, with what data and what is logged</li>
+          <li>Onboarding time reduced from days to hours</li>
+          <li>Back-office workload cut by 20–40%</li>
+          <li>Faster response times without extra hires</li>
+          <li>Clear governance: tools, permissions, audit logs</li>
         </ul>
 
-        <p>
-          Want concrete examples for your industry? Ask in the discovery call or webinar Q&amp;A.
-        </p>
+        <p>Want examples for your industry? Ask during the discovery call.</p>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <p>Want the 1:1 mentoring or a private executive session? Send a note.</p>
-        <form class="form" action="https://formspree.io/f/your-id" method="POST">
+        <p>Want 1:1 mentoring or a private executive session? Send a note.</p>
+
+        <form class="form" action="https://formspree.io/f/movpypbg" method="POST">
           <div class="row">
             <input name="name" placeholder="Full name" required>
             <input name="email" type="email" placeholder="Work email" required>
           </div>
+
           <div class="row">
             <input name="company" placeholder="Company" required>
-            <input name="phone" type="tel" placeholder="Phone" pattern="^[+0-9 ()-]{6,}$">
+            <input name="phone" type="tel" placeholder="Phone">
           </div>
+
           <textarea name="message" rows="5" placeholder="What do you want to automate first?" required></textarea>
-          <button class="btn" type="submit">Send</button>
+
+          <button class="btn">Send</button>
         </form>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer" id="privacy">
+  <footer class="footer">
     <div class="container footer__grid">
       <p>© <span id="year"></span> B2B AI Insights — <span class="tiny muted">by Julia Wawrzyniak</span></p>
       <nav class="footer__nav">
@@ -269,7 +235,7 @@
       </nav>
     </div>
     <div class="container tiny muted" style="margin-top:8px;">
-      <p>Privacy: We collect registration details (name, email, phone) solely to deliver webinar access and executive materials. You can request deletion at any time.</p>
+      <p>Privacy: We collect registration details solely to deliver webinar access and executive materials. You can request deletion anytime.</p>
     </div>
   </footer>
 
